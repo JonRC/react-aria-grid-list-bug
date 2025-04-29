@@ -56,7 +56,7 @@ function App() {
         ...options,
       } as DraggableCollectionStateOptions);
       draggableHook.getKeysForDrag = function (key: string) {
-        return new Set([key]);
+        return new Set([key]); //Just the clicked item be a key for drag
       };
       return draggableHook;
     };
